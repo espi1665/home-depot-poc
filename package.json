@@ -1,0 +1,11 @@
+{
+  "name": "home-depot-poc",
+  "version": "1.0.0",
+  "description": "home depot poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC"
+}
