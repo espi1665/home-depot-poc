@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 require("isomorphic-fetch");
 const dotenv = require("dotenv");
@@ -96,17 +96,11 @@ async function syncGoogleSheets(home_depot_items) {
     if (
       data.table.rows[i].c[1].v === home_depot_items[i].name &&
       data.table.rows[i].c[2].v === home_depot_items[i].price &&
-      data.table.rows[i].c[3].v === home_depot_items[i].inStock
+      (home_depot_items[i].inStock < data.table.rows[i].c[3].v * 1.2 &&
+       home_depot_items[i].inStock > data.table.rows[i].c[3].v * 0.8 &&
+       data.table.rows[i].c[3].v > 100)
     ) {
       console.log(`NO UPDATES REQUIRED for - ${home_depot_items[i].name}`);
-    } else if (
-      data.table.rows[i].c[1].v === home_depot_items[i].name &&
-      data.table.rows[i].c[2].v === home_depot_items[i].price &&
-      data.table.rows[i].c[3].v > 100
-    ) {
-      console.log(
-        `NO UPDATES REQUIRED - ONLY Stock change - ${home_depot_items[i].name}`
-      );
     } else {
       await updateGoogleSheet(home_depot_items[i]);
     }
