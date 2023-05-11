@@ -4,11 +4,14 @@
   "description": "home depot poc",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "run-script": "node src/index.js",
+    "lint": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "isomorphic-fetch": "^3.0.0",
+    "prettier": "^2.8.8"
   }
 }
