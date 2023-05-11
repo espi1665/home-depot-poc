@@ -28,3 +28,12 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run run-script
+      env: 
+        RAPID_API_KEY: ${{secrets.RAPID_API_KEY}}
+        RAPID_API_HOST: ${{secrets.RAPID_API_HOST}}
+        GOOGLESHEETS_GET_URL: ${{secrets.GOOGLESHEETS_GET_URL}}
+        MATERIAL_PRICING_URL: ${{secrets.MATERIAL_PRICING_URL}}
+        SHEETDB_ID: ${{secrets.SHEETDB_ID}}
+        EMAIL: ${{secrets.EMAIL}}
+
+        
