@@ -1,0 +1,19 @@
+[{ "storeId": "8445",
+  "items": [
+  { "id": "205757688", "google_id": 1, "name": "Cedar Fence Picket" },
+  { "id": "202319053", "google_id": 2, "name": "Pine Fence Picket" },
+  { "id": "100318511", "google_id": 3, "name": "80 lb. Concrete Mix" },
+  { "id": "100318521", "google_id": 4, "name": "50 lb. Fast-Setting Concrete Mix" },
+  { "id": "205220341", "google_id": 5, "name": "4x4x8 #2 Ground Contact Pressure-Treated Pine Timber" },
+  { "id": "206970948", "google_id": 6, "name": "2x4x8 #2 Ground Contact Pressure-Treated Lumber" }
+]},
+  { "storeId": "1403",
+    "items": [
+    { "id": "205757688", "google_id": 11, "name": "Cedar Fence Picket" },
+    { "id": "202319053", "google_id": 12, "name": "Pine Fence Picket" },
+    { "id": "100318511", "google_id": 13, "name": "80 lb. Concrete Mix" },
+    { "id": "100318521", "google_id": 14, "name": "50 lb. Fast-Setting Concrete Mix" },
+    { "id": "205220341", "google_id": 15, "name": "4x4x8 #2 Ground Contact Pressure-Treated Pine Timber" },
+    { "id": "206970948", "google_id": 16, "name": "2x4x8 #2 Ground Contact Pressure-Treated Lumber" }
+  ]}
+]
