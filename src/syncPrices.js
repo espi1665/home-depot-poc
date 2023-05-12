@@ -5,9 +5,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 async function syncAllPrices() {
-  // const store_ids = ["8445", "1403"]
-  // Cedar picket, pine picket, 80lbs concrete, 50lbs concrete, 4x4x8, 2x4x8
-  // TODO: two objects per storeId
   const home_depot_items = require("./json/homeDepotItems.json");
   const headers = require("./json/homeDepotAPIHeaders.json");
   const raw_body = require("./json/homeDepotAPIBody.json");
@@ -50,7 +47,10 @@ async function syncGoogleSheets(home_depot_items) {
 
   let isRogersStore = 0; // Is Rogers Store
   if (home_depot_items.storeId === "1403") {
-    isRogersStore = 6; // Not Rogers Store
+    isRogersStore = 6; // Is Fayetteville
+    console.log(`${"-".repeat(80)}\n${"*".repeat(80)}\nSync Fayetteville Home Depot=${home_depot_items.storeId}\n${"*".repeat(80)}`)
+  } else {
+    console.log(`${"-".repeat(80)}\n${"*".repeat(80)}\nSync Rogers Home Depot=${home_depot_items.storeId}\n${"*".repeat(80)}`)
   }
   for (let i = 0; i < home_depot_items.items.length; i++) {
     console.log(
