@@ -54,11 +54,11 @@ async function syncGoogleSheets(home_depot_items) {
   }
   for (let i = 0; i < home_depot_items.items.length; i++) {
     console.log(
-      `${"-".repeat(80)}\nName=${data.table.rows[i].c[1].v} === ${
+      `${"-".repeat(80)}\nName=${data.table.rows[i + isRogersStore].c[1].v} === ${
         home_depot_items.items[i].name
-      } \nPrice=${data.table.rows[i].c[2].v}===${
+      } \nPrice=${data.table.rows[i + isRogersStore].c[2].v}===${
         home_depot_items.items[i].price
-      }\nStock=${data.table.rows[i].c[3].v} === ${
+      }\nStock=${data.table.rows[i + isRogersStore].c[3].v} === ${
         home_depot_items.items[i].inStock
       }`
     );
