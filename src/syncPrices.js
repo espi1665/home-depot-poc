@@ -83,7 +83,7 @@ async function syncGoogleSheets(home_depot_items) {
     if (
       home_depot_items.items[i].price >
         data.table.rows[i + isRogersStore].c[4].v * 1.2 ||
-      home_depot_items.items[i].price < data.table.rows[i].c[4].v * 0.8
+      home_depot_items.items[i].price < data.table.rows[i + isRogersStore].c[4].v * 0.8
     ) {
       await sendEmail(
         home_depot_items.items[i],
