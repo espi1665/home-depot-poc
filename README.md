@@ -1,7 +1,7 @@
 # Home-Depot-PoC
-Home Depot Scrapper PoC is a CRON serive that runs every morning on Github Actions. It scraps data from home depot, checks the price/stock, and updates a google sheet. If the price has changed by 20%, this project will send an email alert to the owner.
+Home Depot Scrapper PoC is a CRON serive that runs every morning on Github Actions. This project scraps data from home depot, checks the price/stock, and updates a google sheet. If the price has changed by 20%, this project will send an email alert to the owner.
 
-This PoC has improved accuracy of fencing bids, and decreased the time to create a bid by 30%. 
+This PoC has improved the accuracy of fencing bids and decreased the time to create a bid by 30%. 
 
 The below APIs / References were used to create this PoC
 - [Home Depot Scrapper](https://stevesie.com/apps/home-depot-api)
